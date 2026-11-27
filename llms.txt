@@ -1,0 +1,32 @@
+# OhWhatIf
+
+> OhWhatIf is an independent digital creative studio turning quiet "what if" questions into focused, privacy-first web tools and interactive experiences (獨立數位創作工作室，把腦中的「如果⋯⋯」化為專注、克制、重視隱私的網頁作品).
+
+## Live Projects
+
+- [Nordic Aurora Radar｜極光即時雷達](https://ohwhatif.com/nordic-aurora-radar/): Real-time aurora observation and space-weather radar for the Nordic skies, bringing together solar wind telemetry, Kp index, and local viewing conditions.
+
+## Upcoming Works
+
+- **心理 / Psychology**: Quiet interactive notes on emotional clarity, cognitive patterns, and self-reflection.
+- **音樂 / Music**: A miniature web sound lab for exploring harmony, rhythm, and acoustics by ear.
+- **Daily Spec｜日常成分表**: Everyday meals, caffeine, and daily habits distilled into clear specification sheets.
+- **小遊戲 / Mini-Games**: Focused three-minute puzzles and minimalist interactive toys designed for calm breaks.
+
+## Site Index & Machine-Readable Files
+
+- [Studio Home](https://ohwhatif.com/): Minimalist bilingual (Traditional Chinese / English) studio homepage.
+- [Sitemap Index](https://ohwhatif.com/sitemap.xml): Top-level XML sitemap index covering the studio root and sub-projects.
+- [Home Sitemap](https://ohwhatif.com/sitemap-home.xml): XML sitemap for the studio homepage.
+- [Nordic Aurora Radar Sitemap](https://ohwhatif.com/nordic-aurora-radar/sitemap.xml): XML sitemap for Nordic Aurora Radar.
+
+## Privacy & Technical Principles
+
+- Zero cookies and no third-party JavaScript.
+- Strict Content Security Policy (`default-src 'none'`) and `no-referrer` policy.
+- Lightweight cookieless pageview counting via a 1x1 pixel on the production domain only.
+
+## Contact
+
+- Email: hello@ohwhatif.com
+- GitHub: [https://github.com/ohwhatif](https://github.com/ohwhatif)

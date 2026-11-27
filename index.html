@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: https://ohwhatif.goatcounter.com; font-src 'self'; connect-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'; manifest-src 'none'; worker-src 'none';"
+  >
+  <meta name="referrer" content="no-referrer">
+  <title>OhWhatIf</title>
+  <meta
+    name="description"
+    content="OhWhatIf — 獨立數位創作工作室。已上線作品：Nordic Aurora Radar｜極光即時雷達；探索心理、音樂、Daily Spec｜日常成分表與小遊戲。"
+  >
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#0b0d0e">
+  <link rel="canonical" href="https://ohwhatif.com/">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="OhWhatIf">
+  <meta property="og:title" content="OhWhatIf">
+  <meta
+    property="og:description"
+    content="Independent digital studio. Live: Nordic Aurora Radar｜極光即時雷達."
+  >
+  <meta property="og:url" content="https://ohwhatif.com/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OhWhatIf">
+  <meta
+    name="twitter:description"
+    content="Independent digital studio. Live: Nordic Aurora Radar｜極光即時雷達."
+  >
+
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">跳至主要內容</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="/" aria-label="OhWhatIf">
+        <img class="brand-mark" src="./favicon.svg" alt="" width="22" height="22">
+        <span>OhWhatIf</span>
+      </a>
+
+      <div class="lang-switch" id="lang-switch" role="group" aria-label="切換語言">
+        <button type="button" class="lang-btn" id="lang-zh" data-lang="zh-Hant" aria-pressed="true">繁中</button>
+        <button type="button" class="lang-btn" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="shell">
+    <section class="hero" aria-labelledby="studio-title">
+      <p class="hero-eyebrow" data-i18n="heroEyebrow">INDEPENDENT DIGITAL STUDIO</p>
+      <h1 class="hero-title" id="studio-title">OhWhatIf</h1>
+      <p class="hero-lead" data-i18n="heroLead">
+        把腦中一閃而過的「如果⋯⋯」，做成安靜、專注、值得反覆打開的網頁小作品。
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="section-live">
+      <div class="section-head">
+        <h2 class="section-title" id="section-live" data-i18n="liveSectionTitle">已上線作品</h2>
+        <span class="section-count">01</span>
+      </div>
+
+      <a class="work-featured" id="work-nordic-aurora-radar" href="/nordic-aurora-radar/">
+        <div class="work-content">
+          <div class="card-meta">
+            <span>01</span>
+            <span class="status-live">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span data-i18n="liveStatus">已上線</span>
+            </span>
+          </div>
+
+          <h3 class="work-title">Nordic Aurora Radar｜極光即時雷達</h3>
+
+          <p class="work-desc" data-i18n="auroraDesc">
+            北歐即時極光觀測雷達。整合太陽風遙測、Kp 指數與即時雲量，陪你在晴朗的極夜抬頭遇見極光。
+          </p>
+
+          <p class="work-specs" data-i18n="auroraSpecs">太陽風遙測 · Kp 指數 · 北歐天空</p>
+
+          <span class="work-cta">
+            <span data-i18n="auroraCta">開啟極光雷達</span>
+            <span class="work-arrow" aria-hidden="true">&rarr;</span>
+          </span>
+        </div>
+
+        <div class="work-visual" aria-hidden="true">
+          <svg class="radar-svg" viewBox="0 0 280 200" width="280" height="200">
+            <line class="radar-axis" x1="20" y1="168" x2="260" y2="168"/>
+            <line class="radar-axis" x1="140" y1="24" x2="140" y2="168"/>
+            <path class="radar-ring" d="M 44 168 A 96 96 0 0 1 236 168"/>
+            <path class="radar-ring-dashed" d="M 76 168 A 64 64 0 0 1 204 168"/>
+            <path class="radar-ring" d="M 108 168 A 32 32 0 0 1 172 168"/>
+            <path class="radar-aurora-soft" d="M 52 124 Q 108 72 154 96 T 232 68"/>
+            <path class="radar-aurora-core" d="M 52 124 Q 108 72 154 96 T 232 68"/>
+            <circle class="radar-point-halo" cx="182" cy="88" r="10"/>
+            <circle class="radar-point" cx="182" cy="88" r="3"/>
+            <text class="radar-label" x="26" y="184">66°N</text>
+            <text class="radar-label" x="131" y="184">N</text>
+            <text class="radar-label" x="220" y="184">KP · LIVE</text>
+          </svg>
+        </div>
+      </a>
+    </section>
+
+    <section class="section" aria-labelledby="section-upcoming">
+      <div class="section-head">
+        <h2 class="section-title" id="section-upcoming" data-i18n="upcomingSectionTitle">預告 · 探索中</h2>
+        <span class="section-count">02 — 05</span>
+      </div>
+
+      <div class="preview-grid">
+        <article class="preview-card" id="preview-psychology">
+          <div class="preview-top">
+            <div class="preview-meta">
+              <span>02</span>
+              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
+            </div>
+            <h3 class="preview-title" data-i18n="psychTitle">心理</h3>
+            <p class="preview-desc" data-i18n="psychDesc">
+              關於情緒覺察、認知偏誤與自我對話的靜謐互動筆記。
+            </p>
+          </div>
+          <span class="preview-tag" data-i18n="psychTag">Psychology</span>
+        </article>
+
+        <article class="preview-card" id="preview-music">
+          <div class="preview-top">
+            <div class="preview-meta">
+              <span>03</span>
+              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
+            </div>
+            <h3 class="preview-title" data-i18n="musicTitle">音樂</h3>
+            <p class="preview-desc" data-i18n="musicDesc">
+              用耳朵直覺探索和弦、律動與微聲景的極簡聲音實驗室。
+            </p>
+          </div>
+          <span class="preview-tag" data-i18n="musicTag">Music</span>
+        </article>
+
+        <article class="preview-card" id="preview-daily-spec">
+          <div class="preview-top">
+            <div class="preview-meta">
+              <span>04</span>
+              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
+            </div>
+            <h3 class="preview-title" data-i18n="dailySpecTitle">Daily Spec｜日常成分表</h3>
+            <p class="preview-desc" data-i18n="dailySpecDesc">
+              把日常飲食、咖啡因與生活配方拆解成一目了然的成分規格表。
+            </p>
+          </div>
+          <span class="preview-tag" data-i18n="dailySpecTag">Daily Spec</span>
+        </article>
+
+        <article class="preview-card" id="preview-mini-games">
+          <div class="preview-top">
+            <div class="preview-meta">
+              <span>05</span>
+              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
+            </div>
+            <h3 class="preview-title" data-i18n="gamesTitle">小遊戲</h3>
+            <p class="preview-desc" data-i18n="gamesDesc">
+              三分鐘上手、不打擾節奏的極簡解謎與策略小品。
+            </p>
+          </div>
+          <span class="preview-tag" data-i18n="gamesTag">Mini-Games</span>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <ul class="footer-links">
+        <li><a id="footer-email" href="mailto:hello@ohwhatif.com">hello@ohwhatif.com</a></li>
+        <li><a id="footer-github" href="https://github.com/ohwhatif" rel="noopener noreferrer">GitHub</a></li>
+        <li><a id="footer-llms" class="footer-mono" href="/llms.txt">/llms.txt</a></li>
+      </ul>
+      <p class="footer-note" data-i18n="footerNote">© 2026 OhWhatIf · 零 Cookie · 無第三方追蹤腳本</p>
+    </div>
+  </footer>
+
+  <noscript>
+    <img
+      class="gc-pixel"
+      src="https://ohwhatif.goatcounter.com/count?p=/&amp;t=OhWhatIf"
+      alt=""
+      width="1"
+      height="1"
+      referrerpolicy="no-referrer"
+    >
+  </noscript>
+</body>
+</html>
