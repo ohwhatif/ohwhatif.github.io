@@ -14,7 +14,7 @@
     content="OhWhatIf — 獨立數位創作工作室。已上線作品：Nordic Aurora Radar｜極光即時雷達；探索心理、音樂、Daily Spec｜日常成分表與小遊戲。"
   >
   <meta name="color-scheme" content="dark">
-  <meta name="theme-color" content="#0b0d0e">
+  <meta name="theme-color" content="#08090a">
   <link rel="canonical" href="https://ohwhatif.com/">
   <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 
@@ -39,152 +39,255 @@
 <body id="top">
   <a class="skip-link" href="#main-content" data-i18n="skipLink">跳至主要內容</a>
 
-  <header class="site-header">
-    <div class="shell header-inner">
-      <a class="brand" href="/" aria-label="OhWhatIf">
-        <img class="brand-mark" src="./favicon.svg" alt="" width="22" height="22">
-        <span>OhWhatIf</span>
-      </a>
+  <header class="masthead">
+    <div class="frame">
+      <div class="masthead-bar">
+        <a class="brand" href="/" aria-label="OhWhatIf">
+          <img class="brand-mark" src="./favicon.svg" alt="" width="20" height="20">
+          <span>OhWhatIf</span>
+        </a>
 
-      <div class="lang-switch" id="lang-switch" role="group" aria-label="切換語言">
-        <button type="button" class="lang-btn" id="lang-zh" data-lang="zh-Hant" aria-pressed="true">繁中</button>
-        <button type="button" class="lang-btn" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+        <p class="masthead-colophon" data-i18n="mastheadColophon">01 已上線 · 04 探索中</p>
+
+        <div class="lang-switch" id="lang-switch" role="group" aria-label="切換語言">
+          <button type="button" class="lang-btn" id="lang-zh" data-lang="zh-Hant" aria-pressed="true">繁中</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button type="button" class="lang-btn" id="lang-en" data-lang="en" aria-pressed="false">EN</button>
+        </div>
       </div>
     </div>
   </header>
 
-  <main id="main-content" class="shell">
+  <main id="main-content" class="frame">
     <section class="hero" aria-labelledby="studio-title">
-      <p class="hero-eyebrow" data-i18n="heroEyebrow">INDEPENDENT DIGITAL STUDIO</p>
-      <h1 class="hero-title" id="studio-title">OhWhatIf</h1>
-      <p class="hero-lead" data-i18n="heroLead">
-        把腦中一閃而過的「如果⋯⋯」，做成安靜、專注、值得反覆打開的網頁小作品。
-      </p>
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-title" id="studio-title">OhWhatIf</h1>
+          <p class="hero-epigraph" data-i18n="heroEpigraph">
+            「如果把腦中一閃而過的好奇，做成安靜而銳利的小工具？」
+          </p>
+        </div>
+
+        <div class="hero-aside">
+          <p class="hero-manifesto" data-i18n="heroManifesto">
+            OhWhatIf 是一間獨立數位工作室。我們在極光、心理、聲音、日常成分與小遊戲之間實驗，打造安靜、零 Cookie、打開就能呼吸的網頁工具。
+          </p>
+          <div class="hero-meta-row">
+            <span data-i18n="heroMetaLeft">OHWHATIF.COM</span>
+            <span data-i18n="heroMetaRight">INDEPENDENT STUDIO</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="section-live">
-      <div class="section-head">
-        <h2 class="section-title" id="section-live" data-i18n="liveSectionTitle">已上線作品</h2>
-        <span class="section-count">01</span>
+      <div class="section-bar">
+        <h2 class="section-label" id="section-live" data-i18n="liveSectionLabel">01 / 已上線作品</h2>
+        <span class="section-index" data-i18n="liveSectionIndex">LIVE NOW</span>
       </div>
 
-      <a class="work-featured" id="work-nordic-aurora-radar" href="/nordic-aurora-radar/">
-        <div class="work-content">
-          <div class="card-meta">
-            <span>01</span>
-            <span class="status-live">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span data-i18n="liveStatus">已上線</span>
-            </span>
+      <a class="showcase" id="work-nordic-aurora-radar" href="/nordic-aurora-radar/">
+        <div class="showcase-stage" aria-hidden="true">
+          <canvas class="aurora-canvas" id="aurora-canvas"></canvas>
+          <div class="stage-overlay">
+            <div class="stage-top">
+              <span class="stage-live">
+                <span class="live-dot"></span>
+                <span data-i18n="stageLive">LIVE TELEMETRY</span>
+              </span>
+              <span>KP 0–9</span>
+            </div>
+
+            <div class="stage-bottom">
+              <span class="stage-coords" data-i18n="stageCaption">69.65° N · 18.96° E</span>
+              <svg class="stage-scale" viewBox="0 0 96 22" width="96" height="22">
+                <line class="scale-line" x1="2" y1="16" x2="94" y2="16"/>
+                <line class="scale-line" x1="2" y1="10" x2="2" y2="16"/>
+                <line class="scale-line" x1="25" y1="12" x2="25" y2="16"/>
+                <line class="scale-line" x1="48" y1="9" x2="48" y2="16"/>
+                <line class="scale-line" x1="71" y1="12" x2="71" y2="16"/>
+                <line class="scale-line" x1="94" y1="10" x2="94" y2="16"/>
+                <line class="scale-accent" x1="48" y1="16" x2="78" y2="16"/>
+              </svg>
+            </div>
           </div>
-
-          <h3 class="work-title">Nordic Aurora Radar｜極光即時雷達</h3>
-
-          <p class="work-desc" data-i18n="auroraDesc">
-            北歐即時極光觀測雷達。整合太陽風遙測、Kp 指數與即時雲量，陪你在晴朗的極夜抬頭遇見極光。
-          </p>
-
-          <p class="work-specs" data-i18n="auroraSpecs">太陽風遙測 · Kp 指數 · 北歐天空</p>
-
-          <span class="work-cta">
-            <span data-i18n="auroraCta">開啟極光雷達</span>
-            <span class="work-arrow" aria-hidden="true">&rarr;</span>
-          </span>
         </div>
 
-        <div class="work-visual" aria-hidden="true">
-          <svg class="radar-svg" viewBox="0 0 280 200" width="280" height="200">
-            <line class="radar-axis" x1="20" y1="168" x2="260" y2="168"/>
-            <line class="radar-axis" x1="140" y1="24" x2="140" y2="168"/>
-            <path class="radar-ring" d="M 44 168 A 96 96 0 0 1 236 168"/>
-            <path class="radar-ring-dashed" d="M 76 168 A 64 64 0 0 1 204 168"/>
-            <path class="radar-ring" d="M 108 168 A 32 32 0 0 1 172 168"/>
-            <path class="radar-aurora-soft" d="M 52 124 Q 108 72 154 96 T 232 68"/>
-            <path class="radar-aurora-core" d="M 52 124 Q 108 72 154 96 T 232 68"/>
-            <circle class="radar-point-halo" cx="182" cy="88" r="10"/>
-            <circle class="radar-point" cx="182" cy="88" r="3"/>
-            <text class="radar-label" x="26" y="184">66°N</text>
-            <text class="radar-label" x="131" y="184">N</text>
-            <text class="radar-label" x="220" y="184">KP · LIVE</text>
-          </svg>
+        <div class="showcase-dossier">
+          <div class="dossier-head">
+            <span class="dossier-num">01</span>
+            <span class="dossier-badge" data-i18n="dossierBadge">已上線</span>
+          </div>
+
+          <div class="dossier-body">
+            <h3 class="dossier-title">
+              <span data-i18n="auroraTitleMain">Nordic Aurora Radar</span>
+              <span class="dossier-sub" data-i18n="auroraTitleSub">極光即時雷達</span>
+            </h3>
+
+            <p class="dossier-desc" data-i18n="auroraDesc">
+              為北歐極夜打造的即時極光觀測雷達。整合太陽風速度、IMF Bz、Kp 指數與即時雲量，讓你在最合適的時刻抬頭看見極光。
+            </p>
+          </div>
+
+          <div>
+            <div class="dossier-specs">
+              <div class="spec-item">
+                <span class="spec-key" data-i18n="specKey1">DATA</span>
+                <span class="spec-val" data-i18n="specVal1">太陽風遙測</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key" data-i18n="specKey2">SIGNAL</span>
+                <span class="spec-val" data-i18n="specVal2">Kp 即時指數</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-key" data-i18n="specKey3">REGION</span>
+                <span class="spec-val" data-i18n="specVal3">北歐極圈</span>
+              </div>
+            </div>
+
+            <div class="dossier-cta">
+              <span class="dossier-cta-label" data-i18n="auroraCta">開啟極光雷達</span>
+              <span class="dossier-cta-arrow" aria-hidden="true">/nordic-aurora-radar/ &rarr;</span>
+            </div>
+          </div>
         </div>
       </a>
     </section>
 
     <section class="section" aria-labelledby="section-upcoming">
-      <div class="section-head">
-        <h2 class="section-title" id="section-upcoming" data-i18n="upcomingSectionTitle">預告 · 探索中</h2>
-        <span class="section-count">02 — 05</span>
+      <div class="section-bar">
+        <h2 class="section-label" id="section-upcoming" data-i18n="upcomingSectionLabel">02 — 05 / 預告與探索</h2>
+        <span class="section-index" data-i18n="upcomingSectionIndex">UPCOMING</span>
       </div>
 
-      <div class="preview-grid">
-        <article class="preview-card" id="preview-psychology">
-          <div class="preview-top">
-            <div class="preview-meta">
-              <span>02</span>
-              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
-            </div>
-            <h3 class="preview-title" data-i18n="psychTitle">心理</h3>
-            <p class="preview-desc" data-i18n="psychDesc">
-              關於情緒覺察、認知偏誤與自我對話的靜謐互動筆記。
+      <div class="gallery-matrix">
+        <article class="study-cell" id="preview-psychology">
+          <div class="study-head">
+            <span class="study-num">02</span>
+            <span class="study-status" data-i18n="statusUpcoming">籌備中</span>
+          </div>
+
+          <div class="study-plate" aria-hidden="true">
+            <svg class="plate-svg" viewBox="0 0 180 92" width="180" height="92">
+              <line class="plate-stroke-faint" x1="16" y1="46" x2="164" y2="46"/>
+              <circle class="plate-stroke psych-outer" cx="84" cy="46" r="32"/>
+              <circle class="plate-stroke-strong psych-inner" cx="98" cy="46" r="21"/>
+              <circle class="plate-stroke-faint" cx="106" cy="46" r="10"/>
+              <circle class="plate-accent" cx="98" cy="46" r="2.2"/>
+            </svg>
+          </div>
+
+          <div class="study-body">
+            <h3 class="study-title" data-i18n="psychTitle">心理</h3>
+            <p class="study-desc" data-i18n="psychDesc">
+              關於情緒覺察、認知慣性與自我提問的靜謐互動筆記。
             </p>
           </div>
-          <span class="preview-tag" data-i18n="psychTag">Psychology</span>
         </article>
 
-        <article class="preview-card" id="preview-music">
-          <div class="preview-top">
-            <div class="preview-meta">
-              <span>03</span>
-              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
-            </div>
-            <h3 class="preview-title" data-i18n="musicTitle">音樂</h3>
-            <p class="preview-desc" data-i18n="musicDesc">
-              用耳朵直覺探索和弦、律動與微聲景的極簡聲音實驗室。
+        <article class="study-cell" id="preview-music">
+          <div class="study-head">
+            <span class="study-num">03</span>
+            <span class="study-status" data-i18n="statusUpcoming">籌備中</span>
+          </div>
+
+          <div class="study-plate" aria-hidden="true">
+            <svg class="plate-svg" viewBox="0 0 180 92" width="180" height="92">
+              <line class="plate-stroke-faint" x1="16" y1="46" x2="164" y2="46"/>
+              <line class="plate-stroke" x1="34" y1="30" x2="34" y2="62"/>
+              <line class="plate-stroke" x1="56" y1="22" x2="56" y2="70"/>
+              <line class="plate-stroke" x1="78" y1="16" x2="78" y2="76"/>
+              <line class="plate-stroke" x1="100" y1="26" x2="100" y2="66"/>
+              <line class="plate-stroke" x1="122" y1="18" x2="122" y2="74"/>
+              <line class="plate-stroke" x1="144" y1="32" x2="144" y2="60"/>
+              <path class="plate-stroke-strong music-wave" d="M 18 46 Q 48 14 78 46 T 138 46 T 164 46"/>
+            </svg>
+          </div>
+
+          <div class="study-body">
+            <h3 class="study-title" data-i18n="musicTitle">音樂</h3>
+            <p class="study-desc" data-i18n="musicDesc">
+              以聽覺直覺探索和弦張力、節奏微差與環境聲景的微型實驗室。
             </p>
           </div>
-          <span class="preview-tag" data-i18n="musicTag">Music</span>
         </article>
 
-        <article class="preview-card" id="preview-daily-spec">
-          <div class="preview-top">
-            <div class="preview-meta">
-              <span>04</span>
-              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
+        <article class="study-cell" id="preview-daily-spec">
+          <div class="study-head">
+            <span class="study-num">04</span>
+            <span class="study-status" data-i18n="statusUpcoming">籌備中</span>
+          </div>
+
+          <div class="study-plate" aria-hidden="true">
+            <div class="spec-plate">
+              <div class="spec-plate-row">
+                <span class="spec-plate-k">CAF</span>
+                <span class="spec-plate-v-accent">120 mg</span>
+              </div>
+              <div class="spec-plate-row">
+                <span class="spec-plate-k">H2O</span>
+                <span class="spec-plate-v">2.0 L</span>
+              </div>
+              <div class="spec-plate-row">
+                <span class="spec-plate-k">PRO</span>
+                <span class="spec-plate-v">72 g</span>
+              </div>
             </div>
-            <h3 class="preview-title" data-i18n="dailySpecTitle">Daily Spec｜日常成分表</h3>
-            <p class="preview-desc" data-i18n="dailySpecDesc">
-              把日常飲食、咖啡因與生活配方拆解成一目了然的成分規格表。
+          </div>
+
+          <div class="study-body">
+            <h3 class="study-title" data-i18n="dailySpecTitle">Daily Spec｜日常成分表</h3>
+            <p class="study-desc" data-i18n="dailySpecDesc">
+              把每天入口的飲食、咖啡因與生活節律，拆解成一目了然的規格表。
             </p>
           </div>
-          <span class="preview-tag" data-i18n="dailySpecTag">Daily Spec</span>
         </article>
 
-        <article class="preview-card" id="preview-mini-games">
-          <div class="preview-top">
-            <div class="preview-meta">
-              <span>05</span>
-              <span class="status-upcoming" data-i18n="statusUpcoming">籌備中</span>
-            </div>
-            <h3 class="preview-title" data-i18n="gamesTitle">小遊戲</h3>
-            <p class="preview-desc" data-i18n="gamesDesc">
-              三分鐘上手、不打擾節奏的極簡解謎與策略小品。
+        <article class="study-cell" id="preview-mini-games">
+          <div class="study-head">
+            <span class="study-num">05</span>
+            <span class="study-status" data-i18n="statusUpcoming">籌備中</span>
+          </div>
+
+          <div class="study-plate" aria-hidden="true">
+            <svg class="plate-svg" viewBox="0 0 180 92" width="180" height="92">
+              <rect class="plate-stroke-faint" x="57" y="13" width="66" height="66"/>
+              <line class="plate-stroke-faint" x1="79" y1="13" x2="79" y2="79"/>
+              <line class="plate-stroke-faint" x1="101" y1="13" x2="101" y2="79"/>
+              <line class="plate-stroke-faint" x1="57" y1="35" x2="123" y2="35"/>
+              <line class="plate-stroke-faint" x1="57" y1="57" x2="123" y2="57"/>
+              <rect class="plate-fill-soft" x="60" y="16" width="16" height="16"/>
+              <rect class="plate-fill-soft" x="104" y="16" width="16" height="16"/>
+              <rect class="plate-fill-soft" x="82" y="60" width="16" height="16"/>
+              <rect class="plate-accent game-piece" x="60" y="38" width="16" height="16"/>
+            </svg>
+          </div>
+
+          <div class="study-body">
+            <h3 class="study-title" data-i18n="gamesTitle">小遊戲</h3>
+            <p class="study-desc" data-i18n="gamesDesc">
+              三分鐘就能上手、不綁架注意力的極簡解謎與空間小品。
             </p>
           </div>
-          <span class="preview-tag" data-i18n="gamesTag">Mini-Games</span>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-inner">
-      <ul class="footer-links">
-        <li><a id="footer-email" href="mailto:hello@ohwhatif.com">hello@ohwhatif.com</a></li>
-        <li><a id="footer-github" href="https://github.com/ohwhatif" rel="noopener noreferrer">GitHub</a></li>
-        <li><a id="footer-llms" class="footer-mono" href="/llms.txt">/llms.txt</a></li>
-      </ul>
-      <p class="footer-note" data-i18n="footerNote">© 2026 OhWhatIf · 零 Cookie · 無第三方追蹤腳本</p>
+  <footer class="colophon">
+    <div class="frame">
+      <div class="colophon-bar">
+        <p class="colophon-copy" data-i18n="footerCopy">© 2026 OhWhatIf</p>
+
+        <ul class="colophon-links">
+          <li><a id="footer-email" href="mailto:hello@ohwhatif.com">hello@ohwhatif.com</a></li>
+          <li><a id="footer-github" href="https://github.com/ohwhatif" rel="noopener noreferrer">GitHub</a></li>
+          <li><a id="footer-llms" class="colophon-mono" href="/llms.txt">/llms.txt</a></li>
+        </ul>
+
+        <p class="colophon-privacy" data-i18n="footerPrivacy">嚴格 CSP · NO-REFERRER · 零 COOKIE</p>
+      </div>
     </div>
   </footer>
 
